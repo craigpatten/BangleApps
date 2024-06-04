@@ -41,7 +41,8 @@ function draw() {
   var dateStr = require("locale").date(date);
   // draw time
   g.setFont("DancingScript").setFontAlign(0,0).setColor("#f00");
-  g.drawString(date.getHours(), x,y);
+  // g.drawString(date.getHours(), x,y);
+  g.drawString(require("locale").time(date, 1).split(":")[0], x,y);
   y += 43;
   g.drawString(date.getMinutes().toString().padStart(2,0), x,y);
   // draw date
