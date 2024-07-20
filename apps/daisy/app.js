@@ -222,7 +222,7 @@ function draw() {
 function drawClock() {
   var date = new Date();
   var timeStr = require("locale").time(date,1);
-  var da = date.toString().split(" ");
+  // var da = date.toString().split(" ");
   // var time = da[4].substr(0,5);
   var hhmm = timeStr.split(":")
   var hh = hhmm[0]; // da[4].substr(0,2);
